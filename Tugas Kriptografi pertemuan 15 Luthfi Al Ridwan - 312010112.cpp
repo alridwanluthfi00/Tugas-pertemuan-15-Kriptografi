@@ -61,13 +61,13 @@ int main() {
   string text;
   int key;
 
-  cout << "Masukkan teks yang akan dienkripsi: ";
+  cout << "Saya harus lulus tepat waktu dan menjadi sarjana ";
   getline(cin, text);
 
   cout << "Masukkan kunci enkripsi (angka 1-5): ";
   cin >> key;
 
-  string ciphertext = encrypt(text, key);
+  string ciphertext = encrypt("Saya harus lulus tepat waktu dan menjadi sarjana", key);
   cout << "Chipertext: " << ciphertext << endl;
 
   string decrypted = decrypt(ciphertext, key);
